@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "settings": {
+    "color": {
+      "palette": [
+        { "name": "Ink", "slug": "ink", "color": "#f6f7fb" },
+        { "name": "Background", "slug": "bg", "color": "#0d1117" },
+        { "name": "Accent", "slug": "accent", "color": "#e63946" },
+        { "name": "Accent Alt", "slug": "accent-alt", "color": "#ffd166" },
+        { "name": "Muted", "slug": "muted", "color": "#a8b1c1" }
+      ],
+      "defaultPalette": false
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "Archivo, 'Helvetica Neue', Arial, sans-serif",
+          "name": "Archivo",
+          "slug": "archivo"
+        }
+      ],
+      "dropCap": false
+    },
+    "custom": {
+      "spacing": {
+        "outer": "clamp(16px, 4vw, 32px)"
+      }
+    }
+  }
+}

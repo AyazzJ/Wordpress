@@ -1,0 +1,59 @@
+/*
+Theme Name: Posterframe
+Theme URI: https://example.com/posterframe
+Author: Your Name
+Author URI: https://example.com
+Description: A crisp WordPress theme for selling movie posters with a bold grid, hero highlight, and product-friendly layout.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.6
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: posterframe
+Tags: e-commerce, portfolio, grid, custom-logo, one-column, two-columns
+*/
+
+/* The heavy lifting lives in assets/css/theme.css; keep this minimal on purpose. */
+:root {
+  --posterframe-bg: #0d1117;
+  --posterframe-ink: #f6f7fb;
+  --posterframe-accent: #e63946;
+  --posterframe-accent-alt: #ffd166;
+  --posterframe-muted: #a8b1c1;
+  --posterframe-card: #161b22;
+  --posterframe-border: #222a35;
+  --posterframe-radius: 14px;
+  --posterframe-shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+  --posterframe-font: "Archivo", "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--posterframe-font);
+  color: var(--posterframe-ink);
+  background: radial-gradient(circle at 20% 20%, rgba(230, 57, 70, 0.08), transparent 35%),
+    radial-gradient(circle at 80% 0%, rgba(255, 209, 102, 0.08), transparent 30%),
+    var(--posterframe-bg);
+}
+
+a {
+  color: var(--posterframe-accent);
+  text-decoration: none;
+}
+
+a:hover,
+ a:focus-visible {
+  color: var(--posterframe-accent-alt);
+}
+
+.screen-reader-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

@@ -1,0 +1,142 @@
+:root {
+  --posterframe-bg: #f7f7f7;
+  --posterframe-ink: #0a0a0a;
+  --posterframe-accent: #f7f7f7;
+  --posterframe-accent-alt: #2b2b2b;
+  --posterframe-muted: #4a4a4a;
+  --posterframe-card: #ffffff;
+  --posterframe-border: #d9d9d9;
+  --posterframe-radius: 10px;
+  --posterframe-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+  --posterframe-font: "Archivo", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Strip gradients/noise for a minimal look */
+body {
+  background: var(--posterframe-bg) !important;
+  color: var(--posterframe-ink);
+}
+
+body, p, li, h1, h2, h3, h4, h5, h6 { color: var(--posterframe-ink); }
+.pf-content, .pf-footer, .pf-card__body, .pf-footer__copy, .pf-lead, .pf-tagline { color: var(--posterframe-ink); }
+.pf-card__meta, .pf-card__excerpt, .pf-lead, .pf-tagline { color: var(--posterframe-muted); }
+
+.pf-header,
+.pf-footer,
+.pf-card,
+.pf-section--accent,
+.woocommerce ul.products li.product,
+.woocommerce table.shop_table,
+.woocommerce-cart .cart_totals,
+.pf-footer__widgets .widget {
+  background: var(--posterframe-card);
+  border-color: var(--posterframe-border);
+  box-shadow: none;
+}
+
+.pf-shell { width: min(1080px, 90vw); }
+
+.pf-hero { padding: 56px 0 28px; }
+.pf-hero__title { font-weight: 700; letter-spacing: 0.01em; }
+.pf-hero__lead { color: var(--posterframe-muted); }
+.pf-hero__badge { background: #fff; color: #000; }
+
+.pf-card__title a { color: var(--posterframe-ink); }
+.pf-card__meta,
+.pf-card__excerpt,
+.pf-lead,
+.pf-tagline { color: var(--posterframe-muted); }
+
+.pf-button,
+.woocommerce .button,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button {
+  background: transparent;
+  color: var(--posterframe-ink);
+  border: 1px solid var(--posterframe-ink);
+  border-radius: var(--posterframe-radius);
+  box-shadow: none;
+}
+
+.pf-button:hover,
+.woocommerce .button:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover {
+  background: #0a0a0a;
+  color: #f7f7f7;
+  border-color: #0a0a0a;
+}
+
+.pf-button--ghost { border-color: var(--posterframe-border); color: var(--posterframe-ink); }
+
+.pf-nav a,
+.pf-footer-menu a { color: var(--posterframe-ink); }
+.pf-nav a:hover { background: #f0f0f0; }
+
+/* Tighter vertical rhythm */
+.pf-section { padding: 28px 0 48px; }
+.pf-section__head { margin-bottom: 18px; }
+.pf-grid { gap: 14px; }
+
+/* Forms */
+input, textarea, select { background: #ffffff; color: var(--posterframe-ink); border: 1px solid var(--posterframe-border); border-radius: 10px; }
+.pf-newsletter input { background: #ffffff !important; color: var(--posterframe-ink); border: 1px solid var(--posterframe-border); }
+.pf-newsletter input::placeholder { color: var(--posterframe-muted); }
+
+/* Remove colored outlines on search and badges */
+.pf-hero__placeholder { background: #f1f1f1; border-color: var(--posterframe-border); color: var(--posterframe-muted); box-shadow: none; }
+.pf-metrics__number { color: var(--posterframe-ink); }
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title { color: var(--posterframe-ink); font-weight: 700; }
+.woocommerce ul.products li.product .price { color: var(--posterframe-ink); font-weight: 600; }
+.woocommerce ul.products li.product a { color: var(--posterframe-ink); }
+.widget, .widget a, .widget li { color: var(--posterframe-ink); }
+.widget .amount, .widget .price { color: var(--posterframe-ink); }
+
+/* WooCommerce tweaks */
+.woocommerce ul.products { gap: 14px; }
+.woocommerce ul.products li.product .price { color: var(--posterframe-ink); }
+.woocommerce-info,
+.woocommerce-message,
+.woocommerce-error { background: #fafafa; border-color: var(--posterframe-border); color: var(--posterframe-ink); }
+
+/* Make cart/table links readable in the minimal white theme variant */
+.woocommerce table.shop_table,
+.woocommerce table.shop_table th,
+.woocommerce table.shop_table td {
+  color: var(--posterframe-ink) !important;
+}
+
+.woocommerce table.shop_table a {
+  color: var(--posterframe-ink) !important;
+}
+
+.woocommerce table.shop_table a:hover {
+  color: var(--posterframe-accent-alt) !important;
+}
+
+/* Footer / widget list cleanup for minimal theme */
+.pf-footer__widgets .widget ul,
+.pf-footer__widgets .widget ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.pf-footer__widgets .widget li { margin: 8px 0; }
+.pf-footer__widgets .widget .widget-title,
+.pf-footer__widgets .widget h3,
+.pf-footer__widgets .widget h2 { margin: 0 0 8px 0; font-size: 1.05rem; }
+
+.pf-footer__widgets .widget_search input[type="search"],
+.pf-footer__widgets .widget_search input[type="text"],
+.pf-footer__widgets input[type="search"],
+.pf-footer__widgets input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--posterframe-border);
+  background: var(--posterframe-card);
+  color: var(--posterframe-ink);
+}
